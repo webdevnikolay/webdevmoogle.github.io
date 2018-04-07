@@ -13,6 +13,7 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -22,18 +23,18 @@
  	<div class="container">
  		<div class="row">
  			<div class="col-lg-7">
- 				<img class="header-img" src="img/iMac.png" alt="iMac картинка">
+ 				<img class="header-img wow fadeInLeftBig" src="img/iMac.png" alt="iMac картинка">
  			</div>
  			<!-- /.col-7 -->
  			<div class="col-lg-5">
- 				<p class="header-pretitle">Веб-разработчик</p>
- 				<h1 class="header-title">Николай Назаров</h1>
- 				<p class="header-subtitle">
+ 				<p class="header-pretitle wow fadeInRightBig" data-wow-delay="0.1s">Веб-разработчик</p>
+ 				<h1 class="header-title wow fadeInRightBig" data-wow-delay="0.2s">Николай Назаров</h1>
+ 				<p class="header-subtitle wow fadeInRightBig" data-wow-delay="0.3s">
  					Верстка на HTML/CSS <br>
  					Разработка сайтов под ключ
  				</p>
- 				<div class="header-button-block">
- 					<button class="header-button">Связаться</button>
+ 				<div class="header-button-block wow fadeInRightBig" data-wow-delay="0.4s">
+ 					<a href="https://vk.me/mgsmile" class="header-button">Связаться</a>
  					<small>*Это бесплатно</small>
  				</div>
  			</div>
@@ -46,7 +47,7 @@
 
  <section class="portfolio">
  	<div class="container">
- 		<div class="portfolio-block">
+ 		<div class="portfolio-block wow fadeIn" data-wow-delay="0.5s">
  			<h2 class="portfolio-title">Портфолио</h2>
  			<p class="portfolio-subtitle">Мои работы</p>
  			<div class="row">
@@ -87,22 +88,27 @@
  			<div class="col-md-4">
  				<div class="social-block">
  					<p class="footer-social__text">Подпишитесь:</p>
- 					<a href="#"><img src="img/socials/facebook-symbol.png" alt="facebook-icon"></a>
- 					<a href="#"><img src="img/socials/vk-symbol.png" alt="vk-icon"></a>
- 					<a href="#"><img src="img/socials/telegram-symbol.png" alt="telegram-icon"></a>
- 					<a href="#"><img src="img/socials/youtube-symbol.png" alt="youtube-icon"></a>
+ 					<a  class="wow bounceInDown" data-wow-delay="0.1s" href="#"><img src="img/socials/facebook-symbol.png" alt="facebook-icon"></a>
+ 					<a  class="wow bounceInDown" data-wow-delay="0.2s" href="https:vk.com/mgsmile"><img src="img/socials/vk-symbol.png" alt="vk-icon"></a>
+ 					<a  class="wow bounceInDown" data-wow-delay="0.3s" href="https://t.me/nightklaus"><img src="img/socials/telegram-symbol.png" alt="telegram-icon"></a>
+ 					<a  class="wow bounceInDown" data-wow-delay="0.4s" href="#"><img src="img/socials/youtube-symbol.png" alt="youtube-icon"></a>
  				</div>
  			</div>
 
  			<div class="col-md-4">
  				<div class="footer-feedback-block">
  					<p class="footer-feedback__text">Напишите мне:</p>
- 					<button class="footer-button">Написать</button>
+ 					<a href="https://vk.me/mgsmile" class="footer-button">Написать</a>
  				</div>
  			</div>
  		</div>
  	</div>
  </footer>
+
+<script src="js/wow.min.js"></script>
+<script>
+	new WOW().init();
+</script>
 
 </body>
 </html>
